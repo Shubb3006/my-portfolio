@@ -19,10 +19,11 @@ export default function ContactForm() {
       setName("");
       setMsg("");
     }, 2000);
+    
   }
   return (
     <div className={styles.container}>
-      <form className={styles.form} onSubmit={handleSubmit}>
+      <form className={styles.form}  action="https://formsubmit.co/sm325642@gmail.com" method="POST">
         <label className={styles.label}>Enter your name</label>
         <input
           className={styles.input}
