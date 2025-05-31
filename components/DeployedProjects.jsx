@@ -17,6 +17,11 @@ export default function DeployedProjects() {
       name: "github-user-app",
       link: "https://github-user-coral.vercel.app/",
     },
+    {
+      id: "4",
+      name: "My-portfolio",
+      link: "https://my-portfolio-one-psi-42.vercel.app/",
+    },
   ];
   return (
     <main className={styles.container}>
