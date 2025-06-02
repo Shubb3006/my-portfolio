@@ -3,6 +3,7 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   animation: fadeIn 1s ease-in-out;
   background-color: #f9fafb;
+  padding-bottom: 20px;
 }
 
 @keyframes fadeIn {

@@ -34,7 +34,7 @@ export default function ProjectsPage() {
       {loading && <p className={styles.loading}>Loading projects...</p>}
       {error && <p className={styles.error}>{error}</p>}
 
-      <ul className={styles["project-list"]} style={{ minHeight: "700px" }}>
+      <ul className={styles["project-list"]} style={{ minHeight: "500px" }}>
         {projects.map((project) => (
           <a
             href={project.html_url}
