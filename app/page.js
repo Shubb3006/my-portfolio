@@ -25,14 +25,14 @@ export default function Home() {
             >
               Contact Me
             </Link>
+            <a
+              href="/Shubham_Resume.pdf"
+              download="Shubham_Bansal_CV.pdf"
+              className={styles.btn}
+            >
+              Download CV
+            </a>
           </div>
-          <a
-            href="/Shubham_Resume.pdf"
-            download="Shubham_Bansal_CV.pdf"
-            className={styles.btn}
-          >
-            Download CV
-          </a>
         </div>
         <div>
           <img className={styles.image} src="/DP.jpg" alt="Shubham" />
