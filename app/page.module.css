@@ -2,12 +2,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 10vh;
   gap: 6rem;
-  padding: 0 2rem;
+  padding-top: 5vh;
   flex-wrap: wrap;
+  height: 100%;
   background: linear-gradient(to right, #f9fafb, #e0e7ff);
-  min-height: 80vh;
+  min-height: 90vh;
   animation: fadeIn 1.5s ease-in-out;
 }
 

@@ -8,19 +8,19 @@ export default function ContactForm() {
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(false);
 
-  function handleSubmit(e) {
-    e.preventDefault();
-    setLoading(true);
-    setTimeout(() => {
-      setData({ name: name, email: email, message: msg });
-      console.log(data);
-      setLoading(false);
-      setEmail("");
-      setName("");
-      setMsg("");
-    }, 2000);
+  // function handleSubmit(e) {
+  //   e.preventDefault();
+  //   setLoading(true);
+  //   setTimeout(() => {
+  //     setData({ name: name, email: email, message: msg });
+  //     console.log(data);
+  //     setLoading(false);
+  //     setEmail("");
+  //     setName("");
+  //     setMsg("");
+  //   }, 2000);
     
-  }
+  // }
   return (
     <div className={styles.container}>
       <form className={styles.form}  action="https://formsubmit.co/sm325642@gmail.com" method="POST">
