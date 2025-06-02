@@ -3,6 +3,17 @@
   padding: 0px;
 }
 
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 .notfound{
   text-align: center;
   margin: 15% 0;
@@ -10,4 +21,13 @@
 
 .notfound p{
   font-size: 1.2rem;
+}
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content {
+  flex: 1;
 }

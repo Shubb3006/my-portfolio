@@ -20,3 +20,31 @@
     line-height: "1.6";
     margin-bottom: "1rem"
 }
+
+.actions {
+    padding-top: 15px;
+  display: flex;
+  align-items: center;
+  gap: 1rem; /* This adds space between links */
+  margin-top: 1rem;
+}
+
+.actions a {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  transition: transform 0.2s ease;
+  line-height: 0; /* Avoid vertical spacing */
+}
+
+.actions a:hover {
+  transform: scale(1.1);
+}
+.actions svg {
+  width: 50px; /* or any fixed size you want */
+  margin: 0;
+  padding: 0;
+  display: block; /* Remove inline spacing */
+}

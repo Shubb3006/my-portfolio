@@ -15,6 +15,7 @@ export default function ProjectsPage() {
         const res = await fetch("https://api.github.com/users/shubb3006/repos");
         if (!res.ok) throw new Error("Could not fetch projects");
         const data = await res.json();
+
         setProjects(data);
       } catch (err) {
         setError(err.message || "An error occurred");
@@ -35,25 +36,27 @@ export default function ProjectsPage() {
 
       <ul className={styles["project-list"]}>
         {projects.map((project) => (
-          <li key={project.id} className={styles["project-card"]}>
-            <h2 className={styles["project-title"]}>{project.name.toUpperCase()}</h2>
+          <a
+            href={project.html_url}
+            target="_blank"
+            rel="noopener noreferrer"
+            key={project.id}
+            className={styles["project-card"]}
+          >
+            <h2 className={styles["project-title"]}>
+              {project.name.toUpperCase()}
+            </h2>
             <p className={styles["project-description"]}>
               {project.created_at.split("T")[0]}
             </p>
-            <a
-              href={project.html_url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="project-link"
-            >
-              Visit Repository →
-            </a>
-          </li>
+            <p className={styles["project-link"]}>Visit Repository →</p>
+          </a>
         ))}
       </ul>
-      
-      <Link href="/deployed">Show Deployed Projects</Link>
-      
+
+      <Link href="/deployed" className={styles["back-link"]}>
+        🚀 Show Deployed Projects
+      </Link>
     </main>
   );
 }
