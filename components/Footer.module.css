@@ -1,9 +1,8 @@
 .footer {
-  background-color: #1f2937; /* dark gray */
-  color: #f3f4f6;             /* light text */
-  padding: 1rem ;
+  background-color: #1f2937;
+  color: #f3f4f6;
   text-align: center;
-   margin-top: auto;
+  padding: 1rem;
 }
 
 .footer-container {
